@@ -1,24 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { LaunchForm } from  './components/LaunchForm';
+import { LaunchTable } from './components/LaunchTable';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{maxWidth: 800, margin: '0 auto', padding: '2rem'}}>
+      <h1 style={{color: '#005b99'}}> ContAI - Gestão Contábil </h1>
+      <LaunchForm/>
+      <hr style={{margin: '2rem 0'}} />
+      <LaunchTable/>      
     </div>
   );
 }
