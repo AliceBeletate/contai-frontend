@@ -1,4 +1,3 @@
-import './App.css';
 import { useEffect, useState } from 'react';
 import { LaunchForm } from './components/LaunchForm';
 import { LaunchTable } from './components/LaunchTable';

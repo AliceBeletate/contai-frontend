@@ -34,33 +34,66 @@ export function LaunchForm({ onAdd }: LaunchFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ background: '#e0f0ffd2', padding: '1rem', borderRadius: '10px', textAlign: 'center' }}>
-      <h2 style={{ color: '#008B8B' }}>Cadastrar Lançamento</h2>
+    <form
+      onSubmit={handleSubmit}
+      style={{
+        background: '#e0f0ffd2',
+        padding: '1rem 10rem',
+        borderRadius: '10px',
+        maxWidth: '450px',
+        margin: '0 auto',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '15px',
+      }}
+    >
+      <h2 style={{ color: '#008B8B', textAlign: 'center' }}>Cadastrar Lançamento</h2>
 
-      <label>Data: </label>
-      <input type="date" value={date} onChange={e => setDate(e.target.value)} required />
-      <br />
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <label style={{ width: '100px', textAlign: 'right', marginRight: '10px' }}>Data:</label>
+        <input
+          type="date"
+          value={date}
+          onChange={e => setDate(e.target.value)}
+          required
+          style={{ flex: 1, padding: '5px' }}
+        />
+      </div>
 
-      <label>Descrição: </label>
-      <input type="text" value={description} onChange={e => setDescription(e.target.value)} required />
-      <br />
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <label style={{ width: '100px', textAlign: 'right', marginRight: '10px' }}>Descrição:</label>
+        <input
+          type="text"
+          value={description}
+          onChange={e => setDescription(e.target.value)}
+          required
+          style={{ flex: 1, padding: '5px' }}
+        />
+      </div>
 
-      <label>Valor: </label>
-      <input
-        type="number"
-        min="0"
-        value={value}
-        onChange={e => setValue(e.target.value)}
-        required
-      />
-      <br />
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <label style={{ width: '100px', textAlign: 'right', marginRight: '10px' }}>Valor:</label>
+        <input
+          type="number"
+          min="0"
+          value={value}
+          onChange={e => setValue(e.target.value)}
+          required
+          style={{ flex: 1, padding: '5px' }}
+        />
+      </div>
 
-      <label>Tipo: </label>
-      <select value={type} onChange={e => setType(e.target.value as 'credit' | 'debit')}>
-        <option value="credit">Crédito</option>
-        <option value="debit">Débito</option>
-      </select>
-      <br />
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <label style={{ width: '100px', textAlign: 'right', marginRight: '10px' }}>Tipo:</label>
+        <select
+          value={type}
+          onChange={e => setType(e.target.value as 'credit' | 'debit')}
+          style={{ flex: 1, padding: '5px' }}
+        >
+          <option value="credit">Crédito</option>
+          <option value="debit">Débito</option>
+        </select>
+      </div>
 
       <button
         type="submit"
@@ -72,10 +105,11 @@ export function LaunchForm({ onAdd }: LaunchFormProps) {
           outline: 'none',
           border: 'none',
           borderRadius: '5px',
-          width: '100px',
-          height: '30px',
-          fontSize: '15px',
-          fontWeight: '550',
+          width: '120px',
+          height: '35px',
+          fontSize: '16px',
+          fontWeight: '600',
+          alignSelf: 'center',
         }}
       >
         Salvar

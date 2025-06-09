@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Contai Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação frontend desenvolvida em React e TypeScript, projetada para interagir com uma API de lançamentos. Ele oferece uma interface para registrar e visualizar lançamentos contábeis.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- **Visualização de Lançamentos**: Exibe uma tabela com informações detalhadas sobre lançamentos.
+- **Formulário de Lançamento**: Permite a criação de dados de lançamentos através de um formulário.
+- **Integração com API**: Conecta-se a um serviço de backend para buscar e enviar dados de lançamentos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instruções de Execução
 
-### `npm test`
+Para configurar e executar este projeto em seu ambiente local, siga os passos abaixo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pré-requisitos
 
-### `npm run build`
+Certifique-se de ter o Node.js e o npm (Node Package Manager) instalados em sua máquina.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Navegue até o diretório do projeto:**
 
-### `npm run eject`
+    ```bash
+    cd /home/ubuntu/contai-frontend/contai-frontend-main
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2.  **Instale as dependências:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Execução
 
-## Learn More
+Para iniciar a aplicação em modo de desenvolvimento:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Isso iniciará o servidor de desenvolvimento e abrirá a aplicação em seu navegador padrão em `http://localhost:3000`.
+
+
+### Testes
+
+Para executar os testes do projeto:
+
+```bash
+npm test
+```
+
+
+### Build
+
+Para criar uma versão de produção da aplicação:
+
+```bash
+npm run build
+```
+
+Os arquivos de build serão gerados na pasta `build`.
+
+
