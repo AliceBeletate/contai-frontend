@@ -21,11 +21,9 @@ Certifique-se de ter o Node.js e o npm (Node Package Manager) instalados em sua 
 
 ### Instalação
 
-1.  **Navegue até o diretório do projeto:**
+1.  **Navegue até o diretório do projeto onde foi clonado**
 
-    ```bash
-    cd /home/ubuntu/contai-frontend/contai-frontend-main
-    ```
+    ./contai-frontend
 
 2.  **Instale as dependências:**
 
