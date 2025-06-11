@@ -72,8 +72,3 @@ export function LaunchTable({ launches }: LaunchTableProps) {
 
 
 
-/* Para cada lançamento no array launches, criamos uma nova linha <tr>.
-
-map é como um "para cada".
-
-*/
